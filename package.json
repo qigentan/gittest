@@ -1,0 +1,54 @@
+{
+  "name": "weapp",
+  "version": "1.0.0",
+  "description": "微信小程序测试demo",
+  "main": "app.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production twb build",
+    "build:dev": "cross-env NODE_ENV=development twb build",
+    "clean": "rimraf dist && mkdirp dist && rimraf .cahce",
+    "watch": "cross-env NODE_ENV=production twb build --watch",
+    "watch:dev": "cross-env NODE_ENV=development twb build --watch",
+    "publish": "cross-env NODE_ENV=development twb publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qigentan/gittest.git"
+  },
+  "bin": {
+    "build": "build/build.js"
+  },
+  "keywords": [
+    "微信小程序demo测试"
+  ],
+  "author": "qigentan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qigentan/gittest/issues"
+  },
+  "homepage": "https://github.com/qigentan/gittest#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-syntax-export-extensions": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-node-env-inline": "^0.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-remove-console": "^6.8.5",
+    "babel-plugin-transform-remove-debugger": "^6.8.5",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-html": "^3.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-promise": "^3.5.0"
+  },
+  "dependencies": { 
+    "lodash": "^4.17.4",
+    "minibus": "^3.1.0"
+  }
+}

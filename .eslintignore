@@ -1,0 +1,4 @@
+modules/promise.js
+modules/qrcode.js
+modules/TrackSdk.js
+build/**
